@@ -1,0 +1,16 @@
+.mx-auto {
+    margin: auto;
+}
+
+label {
+    width: 100% !important;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+}
