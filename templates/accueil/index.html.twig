@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}LikeProject
+{% endblock %}
+
+{% block body %}
+	<div class="container mt-5">
+		<ul>
+			{% for user in ListUser %}
+				<li>
+					<a href="likes/{{user.id}}" class="text-danger">&#10084;</a> {{user.email}} a 
+                    {% if user.Likes is not empty %}
+                        {{user.Likes}} like(s)
+                    {% else %}
+                        0 like
+                    {% endif %}
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+{% endblock %}
